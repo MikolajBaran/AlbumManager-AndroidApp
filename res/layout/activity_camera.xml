@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CameraActivity"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cameraLayout"
+        >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/photooptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/photoColors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_color_lens_black_48dp" />
+
+        <ImageView
+            android:id="@+id/photoExposure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_exposure_black_48dp" />
+
+        <ImageView
+            android:id="@+id/photoBrightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_brightness_medium_black_48dp" />
+
+        <ImageView
+            android:id="@+id/photoSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_photo_size_select_large_black_48dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/takesavephotoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/takePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_camera_enhance_black_48dp" />
+
+        <ImageView
+            android:id="@+id/savePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_check_circle_black_48dp" />
+    </LinearLayout>
+
+</RelativeLayout>
